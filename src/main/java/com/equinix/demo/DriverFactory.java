@@ -31,16 +31,16 @@ public class DriverFactory {
         driver.get().get(url);
     }
 
+    private static int i=0;
+
     public static WebDriver getDriver() {
         return driver.get();
     }
 
     public static void quitDriver() {
-        try {
-            driver.get().quit();
-        } catch (Exception e) {
-            driver.remove();
-        }
+        i++;
+        System.out.println("syncTestBroken" + i);
+        driver.get().quit();
         driver.remove();
     }
 }

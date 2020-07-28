@@ -3,11 +3,12 @@ package com.equinix.demo;
 import com.equinix.demo.components.ShelfItem;
 import com.equinix.demo.components.ShoppingCart;
 import com.equinix.demo.pages.MainShopPage;
+import lombok.SneakyThrows;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SmokeTest extends BaseTest {
+public class SmokeTest3 extends BaseTest {
 
     @Test
     public void smokeTest() {
